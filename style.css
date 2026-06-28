@@ -40,6 +40,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -735,6 +736,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+  width: 100%;
 }
 
 .search-box {
@@ -776,6 +778,8 @@ header {
   flex-wrap: wrap;
   gap: 0.6rem;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .filter-tab {
@@ -1849,7 +1853,7 @@ footer {
   }
 
   .slide {
-    height: 320px;
+    height: 480px;
   }
 
   .slider-btn {
@@ -1900,11 +1904,11 @@ footer {
   }
 
   .slide {
-    height: 260px;
+    height: 420px;
   }
 
   .products-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .drawer-inner {
