@@ -1,0 +1,292 @@
+window.SWEET_CRUSH_PRODUCTS = [
+  {
+    "id": 1,
+    "name": "Sawad Candy Box",
+    "packing": "36x50",
+    "unitPrice": 2.0,
+    "retailPrice": 100.0,
+    "tradePrice": 80.0,
+    "category": "Candies & Toffees",
+    "image": "Swad Candy.png"
+  },
+  {
+    "id": 2,
+    "name": "Mix Fruit Toffee Jar",
+    "packing": "30x150",
+    "unitPrice": 2.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Candies & Toffees",
+    "image": "Mix fruit candy.png"
+  },
+  {
+    "id": 3,
+    "name": "Khoya Toffee",
+    "packing": "48x30",
+    "unitPrice": 5.0,
+    "retailPrice": 150.0,
+    "tradePrice": 130.0,
+    "category": "Candies & Toffees",
+    "image": "Khoya Toffee Butter.png"
+  },
+  {
+    "id": 4,
+    "name": "Khoya Badam",
+    "packing": "48x15",
+    "unitPrice": 10.0,
+    "retailPrice": 150.0,
+    "tradePrice": 130.0,
+    "category": "Candies & Toffees",
+    "image": "khoya.png"
+  },
+  {
+    "id": 5,
+    "name": "Cone Jelly Jar",
+    "packing": "12x70",
+    "unitPrice": 5.0,
+    "retailPrice": 350.0,
+    "tradePrice": 300.0,
+    "category": "Jelly",
+    "image": "Fruit Cone Jelly 10rs.png"
+  },
+  {
+    "id": 6,
+    "name": "Cornoto Cone Chocolate",
+    "packing": "24x30",
+    "unitPrice": 5.0,
+    "retailPrice": 150.0,
+    "tradePrice": 130.0,
+    "category": "Chocolate",
+    "image": "corneto cone chocolate.png"
+  },
+  {
+    "id": 7,
+    "name": "Egg Tweet",
+    "packing": "24x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Others",
+    "image": "Egg Tweet.png"
+  },
+  {
+    "id": 8,
+    "name": "Won Chocolate Paste Jar",
+    "packing": "27x80",
+    "unitPrice": 5.0,
+    "retailPrice": 400.0,
+    "tradePrice": 350.0,
+    "category": "Chocolate",
+    "image": "won chocolate paste.png"
+  },
+  {
+    "id": 9,
+    "name": "Shami Meva",
+    "packing": "24x30",
+    "unitPrice": 5.0,
+    "retailPrice": 150.0,
+    "tradePrice": 130.0,
+    "category": "Others",
+    "image": "shahi mewa.png"
+  },
+  {
+    "id": 10,
+    "name": "Desi Anda",
+    "packing": "24x60",
+    "unitPrice": 5.0,
+    "retailPrice": 300.0,
+    "tradePrice": 250.0,
+    "category": "Others",
+    "image": "Desi Anda.png"
+  },
+  {
+    "id": 11,
+    "name": "Yums",
+    "packing": "24x24",
+    "unitPrice": 10.0,
+    "retailPrice": 240.0,
+    "tradePrice": 200.0,
+    "category": "Others",
+    "image": "yumz fruity.png"
+  },
+  {
+    "id": 12,
+    "name": "Fudge Toffee Jar",
+    "packing": "24x60",
+    "unitPrice": 5.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Candies & Toffees",
+    "image": "Fudge Toffee.png"
+  },
+  {
+    "id": 13,
+    "name": "2 Ever Bunty Sheet",
+    "packing": "60x30",
+    "unitPrice": 5.0,
+    "retailPrice": 150.0,
+    "tradePrice": 130.0,
+    "category": "Beans & Gums",
+    "image": "2ever beans.png"
+  },
+  {
+    "id": 14,
+    "name": "Silk + Bubly Chocolate",
+    "packing": "30x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Chocolate",
+    "image": "Silk Bubbly Chocolate.png"
+  },
+  {
+    "id": 15,
+    "name": "Daily Milk Chocolate",
+    "packing": "30x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Chocolate",
+    "image": "Daily Milk Chocolate.png"
+  },
+  {
+    "id": 16,
+    "name": "Spoon Chocolate",
+    "packing": "36x24",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 210.0,
+    "category": "Chocolate",
+    "image": "Spoon Chocolate.png"
+  },
+  {
+    "id": 17,
+    "name": "4 Ever Sheet Bunty",
+    "packing": "48x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Beans & Gums",
+    "image": "4Ever beans.png"
+  },
+  {
+    "id": 18,
+    "name": "Badam Candy",
+    "packing": "36x30",
+    "unitPrice": 5.0,
+    "retailPrice": 150.0,
+    "tradePrice": 130.0,
+    "category": "Candies & Toffees",
+    "image": "badam delight Candy.png"
+  },
+  {
+    "id": 19,
+    "name": "Sorbon Mini Cone Chocolate",
+    "packing": "24x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Chocolate",
+    "image": "sorbon mini cone chocolate.png"
+  },
+  {
+    "id": 20,
+    "name": "Tim Tim Imli Box",
+    "packing": "24x18",
+    "unitPrice": 20.0,
+    "retailPrice": 360.0,
+    "tradePrice": 310.0,
+    "category": "Imli & Sour",
+    "image": "Tim Tim Imli.png"
+  },
+  {
+    "id": 21,
+    "name": "Usailah Cup Imli",
+    "packing": "30x12",
+    "unitPrice": 60.0,
+    "retailPrice": 720.0,
+    "tradePrice": 600.0,
+    "category": "Imli & Sour",
+    "image": "Tim Tim Imli Imli.png"
+  },
+  {
+    "id": 22,
+    "name": "Lolipop Pop On",
+    "packing": "18x50",
+    "unitPrice": 10.0,
+    "retailPrice": 500.0,
+    "tradePrice": 420.0,
+    "category": "Lollipop",
+    "image": "Pop on Loolipop.png"
+  },
+  {
+    "id": 23,
+    "name": "Liquid Chocolate Silk",
+    "packing": "24x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Chocolate",
+    "image": "silk chocolate.png"
+  },
+  {
+    "id": 24,
+    "name": "Umberala Chocolate",
+    "packing": "24x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Chocolate",
+    "image": "silky chocolate.png"
+  },
+  {
+    "id": 25,
+    "name": "Sweeto Chocolate Balls",
+    "packing": "36x50",
+    "unitPrice": 5.0,
+    "retailPrice": 250.0,
+    "tradePrice": 210.0,
+    "category": "Chocolate",
+    "image": "Sweeto Chocolate Balls.png"
+  },
+  {
+    "id": 26,
+    "name": "Nimko Halla Gula",
+    "packing": "12x6",
+    "unitPrice": 10.0,
+    "retailPrice": 240.0,
+    "tradePrice": 210.0,
+    "category": "Nimko",
+    "image": ""
+  },
+  {
+    "id": 27,
+    "name": "Usailah AnarDana Imli",
+    "packing": "24x18",
+    "unitPrice": 20.0,
+    "retailPrice": 360.0,
+    "tradePrice": 310.0,
+    "category": "Imli & Sour",
+    "image": "Tamarind Imli.png"
+  },
+  {
+    "id": 28,
+    "name": "Sweeto Chocolate Balls Jar",
+    "packing": "18x80",
+    "unitPrice": 5.0,
+    "retailPrice": 400.0,
+    "tradePrice": 350.0,
+    "category": "Chocolate",
+    "image": "Sweeto Chocolate Balls Jar.png"
+  },
+  {
+    "id": 29,
+    "name": "Bano Nimko",
+    "packing": "12x6",
+    "unitPrice": 20.0,
+    "retailPrice": 240.0,
+    "tradePrice": 210.0,
+    "category": "Nimko",
+    "image": ""
+  }
+];
