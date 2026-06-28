@@ -9,6 +9,7 @@ let currentSlide = 0;
 let phoneNumber = "923008536213";
 const totalSlides = 4;
 let slideInterval;
+let filtersReady = false;
 
 function getAppReferenceUrl() {
   if (window.location.protocol === "file:") {
@@ -138,47 +139,36 @@ function fetchProducts() {
 
   const embeddedProducts = Array.isArray(window.SWEET_CRUSH_PRODUCTS) ? window.SWEET_CRUSH_PRODUCTS : [];
 
-  if (window.location.protocol === "file:" && embeddedProducts.length > 0) {
+  // Render immediately from embedded data if available (no waiting for fetch)
+  if (embeddedProducts.length > 0) {
     productsData = embeddedProducts;
     renderProducts(productsData);
     setupFilters();
-    return;
+  } else {
+    // No embedded data — show skeleton while fetching
+    grid.innerHTML = Array(6).fill(0).map(() => `
+      <div class="product-card" style="opacity: 0.6; pointer-events: none;">
+        <div class="product-image-container" style="background: #F3F4F6;"></div>
+        <div class="product-details">
+          <div style="height: 24px; background: #E5E7EB; margin-bottom: 12px; border-radius: 4px;"></div>
+          <div style="height: 16px; background: #E5E7EB; width: 60%; margin-bottom: 20px; border-radius: 4px;"></div>
+          <div style="height: 48px; background: #E5E7EB; border-radius: 4px;"></div>
+        </div>
+      </div>
+    `).join('');
   }
 
-  // Show skeletal loading
-  grid.innerHTML = Array(6).fill(0).map(() => `
-    <div class="product-card" style="opacity: 0.6; pointer-events: none;">
-      <div class="product-image-container" style="background: #F3F4F6;"></div>
-      <div class="product-details">
-        <div style="height: 24px; background: #E5E7EB; margin-bottom: 12px; border-radius: 4px;"></div>
-        <div style="height: 16px; background: #E5E7EB; width: 60%; margin-bottom: 20px; border-radius: 4px;"></div>
-        <div style="height: 48px; background: #E5E7EB; border-radius: 4px;"></div>
-      </div>
-    </div>
-  `).join('');
+  // Background fetch for latest data (skip on file:// protocol)
+  if (window.location.protocol === "file:") return;
 
   fetch("./products.json", { cache: "no-store" })
     .then(response => response.json())
     .then(data => {
       productsData = data;
-      renderProducts(data);
-      setupFilters();
+      reapplyCurrentFilter();
     })
     .catch(error => {
-      console.error("Error loading products:", error);
-      if (embeddedProducts.length > 0) {
-        productsData = embeddedProducts;
-        renderProducts(productsData);
-        setupFilters();
-        return;
-      }
-
-      grid.innerHTML = `
-        <div class="no-results">
-          <h3>Failed to load products</h3>
-          <p>Please run the site through a local server so the product JSON can load.</p>
-        </div>
-      `;
+      console.error("Background fetch failed, using embedded data:", error);
     });
 }
 
@@ -307,21 +297,28 @@ function getCategoryClass(cat) {
 // ==========================================
 // Product Search & Category Filters
 // ==========================================
+let currentSearch = "";
+let currentCategory = "All";
+
+function applyFilters() {
+  const filtered = productsData.filter(product => {
+    const matchesSearch = product.name.toLowerCase().includes(currentSearch.toLowerCase());
+    const matchesCat = currentCategory === "All" || product.category === currentCategory;
+    return matchesSearch && matchesCat;
+  });
+  renderProducts(filtered);
+}
+
+function reapplyCurrentFilter() {
+  applyFilters();
+}
+
 function setupFilters() {
+  if (filtersReady) return;
+  filtersReady = true;
+
   const searchInput = document.getElementById("searchInput");
   const filterTabs = document.querySelectorAll(".filter-tab");
-
-  let currentSearch = "";
-  let currentCategory = "All";
-
-  function applyFilters() {
-    const filtered = productsData.filter(product => {
-      const matchesSearch = product.name.toLowerCase().includes(currentSearch.toLowerCase());
-      const matchesCat = currentCategory === "All" || product.category === currentCategory;
-      return matchesSearch && matchesCat;
-    });
-    renderProducts(filtered);
-  }
 
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
