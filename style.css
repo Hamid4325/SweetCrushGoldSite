@@ -528,13 +528,17 @@ header {
   border-color: var(--border-gold);
 }
 
+.feature-card:nth-child(2),
 .feature-card:nth-child(3) {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   color: #FFFFFF;
 }
 
+.feature-card:nth-child(2) .feature-icon,
 .feature-card:nth-child(3) .feature-icon { color: var(--accent-gold-light); }
+.feature-card:nth-child(2) h3,
 .feature-card:nth-child(3) h3 { color: #FFFFFF; }
+.feature-card:nth-child(2) p,
 .feature-card:nth-child(3) p { color: rgba(255, 255, 255, 0.85); }
 
 .feature-icon {
@@ -1781,7 +1785,7 @@ footer {
   }
 
   .about-visual img {
-    max-width: 400px;
+    max-width: 100%;
   }
 
   .stats-grid {
@@ -1907,8 +1911,13 @@ footer {
     height: 420px;
   }
 
+  .products-section {
+    padding: 4rem 0.75rem;
+  }
+
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
 
   .drawer-inner {
