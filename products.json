@@ -1,12 +1,12 @@
 [
   {
-    "name": "Sawad Candy Box",
+    "name": "Forever Candy",
     "packing": "36x50",
     "unitPrice": 2.0,
     "retailPrice": 100.0,
     "tradePrice": 80.0,
     "category": "Candy",
-    "image": "Swad Candy.jpg",
+    "image": "forever Candy.jpg",
     "id": 1
   },
   {
@@ -20,23 +20,23 @@
     "id": 2
   },
   {
-    "name": "Forever Candy",
+    "name": "Sawad Candy Box",
     "packing": "36x50",
     "unitPrice": 2.0,
     "retailPrice": 100.0,
     "tradePrice": 80.0,
     "category": "Candy",
-    "image": "forever Candy.jpg",
+    "image": "Swad Candy.jpg",
     "id": 3
   },
   {
-    "name": "Love Candy Mango",
+    "name": "Love Candy Orange",
     "packing": "30x60",
     "unitPrice": 5.0,
     "retailPrice": 300.0,
     "tradePrice": 250.0,
     "category": "Candy",
-    "image": "Love Candy Mango.jpg",
+    "image": "Love Candy Orange.jpg",
     "id": 4
   },
   {
@@ -50,16 +50,6 @@
     "id": 5
   },
   {
-    "name": "Love Candy Orange",
-    "packing": "30x60",
-    "unitPrice": 5.0,
-    "retailPrice": 300.0,
-    "tradePrice": 250.0,
-    "category": "Candy",
-    "image": "Love Candy Orange.jpg",
-    "id": 6
-  },
-  {
     "name": "Badam Candy",
     "packing": "36x30",
     "unitPrice": 5.0,
@@ -67,7 +57,7 @@
     "tradePrice": 130.0,
     "category": "Candy",
     "image": "badam delight Candy.jpg",
-    "id": 7
+    "id": 6
   },
   {
     "name": "Love Candy Blue",
@@ -77,6 +67,16 @@
     "tradePrice": 250.0,
     "category": "Candy",
     "image": "Love Candy Blue.jpg",
+    "id": 7
+  },
+  {
+    "name": "Love Candy Mango",
+    "packing": "30x60",
+    "unitPrice": 5.0,
+    "retailPrice": 300.0,
+    "tradePrice": 250.0,
+    "category": "Candy",
+    "image": "Love Candy Mango.jpg",
     "id": 8
   },
   {
@@ -100,16 +100,6 @@
     "id": 10
   },
   {
-    "name": "Lolipop Pop On",
-    "packing": "18x50",
-    "unitPrice": 10.0,
-    "retailPrice": 500.0,
-    "tradePrice": 420.0,
-    "category": "Lollipop",
-    "image": "Pop on Loolipop.jpg",
-    "id": 11
-  },
-  {
     "name": "twist pouch lollipop",
     "packing": "18x50",
     "unitPrice": 10.0,
@@ -117,6 +107,16 @@
     "tradePrice": 420.0,
     "category": "Lollipop",
     "image": "twist pouch lollipop.jpg",
+    "id": 11
+  },
+  {
+    "name": "Lolipop Pop On",
+    "packing": "18x50",
+    "unitPrice": 10.0,
+    "retailPrice": 500.0,
+    "tradePrice": 420.0,
+    "category": "Lollipop",
+    "image": "Pop on Loolipop.jpg",
     "id": 12
   },
   {
@@ -130,16 +130,6 @@
     "id": 13
   },
   {
-    "name": "Fudge Toffee Jar",
-    "packing": "24x60",
-    "unitPrice": 5.0,
-    "retailPrice": 300.0,
-    "tradePrice": 260.0,
-    "category": "Toffee",
-    "image": "Fudge Toffee.jpg",
-    "id": 14
-  },
-  {
     "name": "Khoya Toffee",
     "packing": "48x30",
     "unitPrice": 5.0,
@@ -147,6 +137,16 @@
     "tradePrice": 130.0,
     "category": "Toffee",
     "image": "Khoya Toffee Butter.jpg",
+    "id": 14
+  },
+  {
+    "name": "Fudge Toffee Jar",
+    "packing": "24x60",
+    "unitPrice": 5.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Toffee",
+    "image": "Fudge Toffee.jpg",
     "id": 15
   },
   {
@@ -180,16 +180,6 @@
     "id": 18
   },
   {
-    "name": "4 Ever Sheet Bunty",
-    "packing": "48x30",
-    "unitPrice": 10.0,
-    "retailPrice": 300.0,
-    "tradePrice": 260.0,
-    "category": "Bunties",
-    "image": "4Ever beans.jpg",
-    "id": 19
-  },
-  {
     "name": "bentoi beans",
     "packing": "48x30",
     "unitPrice": 10.0,
@@ -197,6 +187,16 @@
     "tradePrice": 260.0,
     "category": "Bunties",
     "image": "bentoi beans.jpg",
+    "id": 19
+  },
+  {
+    "name": "4 Ever Sheet Bunty",
+    "packing": "48x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Bunties",
+    "image": "4Ever beans.jpg",
     "id": 20
   },
   {
@@ -210,13 +210,13 @@
     "id": 21
   },
   {
-    "name": "Milkee Paste",
+    "name": "stawberry cremy bite",
     "packing": "24x30",
     "unitPrice": 10.0,
     "retailPrice": 300.0,
     "tradePrice": 260.0,
     "category": "Liquid Chocolate",
-    "image": "Milkee Paste.jpeg",
+    "image": "stawberry cremy bite.jpg",
     "id": 22
   },
   {
@@ -230,26 +230,6 @@
     "id": 23
   },
   {
-    "name": "Nutelly",
-    "packing": "24x30",
-    "unitPrice": 10.0,
-    "retailPrice": 300.0,
-    "tradePrice": 260.0,
-    "category": "Liquid Chocolate",
-    "image": "nutelly chocolate.jpg",
-    "id": 24
-  },
-  {
-    "name": "stawberry cremy bite",
-    "packing": "24x30",
-    "unitPrice": 10.0,
-    "retailPrice": 300.0,
-    "tradePrice": 260.0,
-    "category": "Liquid Chocolate",
-    "image": "stawberry cremy bite.jpg",
-    "id": 25
-  },
-  {
     "name": "Umberala Chocolate",
     "packing": "24x30",
     "unitPrice": 10.0,
@@ -257,6 +237,26 @@
     "tradePrice": 260.0,
     "category": "Liquid Chocolate",
     "image": "",
+    "id": 24
+  },
+  {
+    "name": "Milkee Paste",
+    "packing": "24x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Liquid Chocolate",
+    "image": "Milkee Paste.jpeg",
+    "id": 25
+  },
+  {
+    "name": "Nutelly",
+    "packing": "24x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Liquid Chocolate",
+    "image": "nutelly chocolate.jpg",
     "id": 26
   },
   {
@@ -300,16 +300,6 @@
     "id": 30
   },
   {
-    "name": "Sweeto Chocolate Balls",
-    "packing": "36x60",
-    "unitPrice": 5.0,
-    "retailPrice": 300.0,
-    "tradePrice": 260.0,
-    "category": "Hard Chocolate",
-    "image": "Sweeto Chocolate Balls.jpg",
-    "id": 31
-  },
-  {
     "name": "Sweeto Chocolate Balls Jar",
     "packing": "18x80",
     "unitPrice": 5.0,
@@ -317,27 +307,17 @@
     "tradePrice": 350.0,
     "category": "Hard Chocolate",
     "image": "Sweeto Chocolate Balls Jar.jpg",
+    "id": 31
+  },
+  {
+    "name": "Sweeto Chocolate Balls",
+    "packing": "36x60",
+    "unitPrice": 5.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Hard Chocolate",
+    "image": "Sweeto Chocolate Balls.jpg",
     "id": 32
-  },
-  {
-    "name": "Love You Chocolate",
-    "packing": "30x30",
-    "unitPrice": 10.0,
-    "retailPrice": 300.0,
-    "tradePrice": 260.0,
-    "category": "Hard Chocolate",
-    "image": "Love You Chocolate.jpg",
-    "id": 33
-  },
-  {
-    "name": "Spoon Chocolate",
-    "packing": "36x30",
-    "unitPrice": 10.0,
-    "retailPrice": 300.0,
-    "tradePrice": 260.0,
-    "category": "Hard Chocolate",
-    "image": "Spoon Chocolate.jpg",
-    "id": 34
   },
   {
     "name": "Silk + Bubly Chocolate",
@@ -347,6 +327,26 @@
     "tradePrice": 260.0,
     "category": "Hard Chocolate",
     "image": "Silk Bubbly Chocolate.jpg",
+    "id": 33
+  },
+  {
+    "name": "Love You Chocolate",
+    "packing": "30x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Hard Chocolate",
+    "image": "Love You Chocolate.jpg",
+    "id": 34
+  },
+  {
+    "name": "Spoon Chocolate",
+    "packing": "36x30",
+    "unitPrice": 10.0,
+    "retailPrice": 300.0,
+    "tradePrice": 260.0,
+    "category": "Hard Chocolate",
+    "image": "Spoon Chocolate.jpg",
     "id": 35
   },
   {
@@ -370,7 +370,7 @@
     "id": 37
   },
   {
-    "name": "Usailah AnarDana Imli",
+    "name": "Tamarind Imli",
     "packing": "24x18",
     "unitPrice": 20.0,
     "retailPrice": 360.0,
@@ -380,13 +380,13 @@
     "id": 38
   },
   {
-    "name": "Tamarind Imli",
+    "name": "Usailah AnarDana Imli",
     "packing": "24x18",
     "unitPrice": 20.0,
     "retailPrice": 360.0,
     "tradePrice": 320.0,
     "category": "Imli",
-    "image": "Tamarind Imli.jpg",
+    "image": "Anar Dana Imli.jpg",
     "id": 39
   },
   {
@@ -400,16 +400,6 @@
     "id": 40
   },
   {
-    "name": "POMEGRANATE Imli",
-    "packing": "30x12",
-    "unitPrice": 60.0,
-    "retailPrice": 720.0,
-    "tradePrice": 600.0,
-    "category": "Imli",
-    "image": "POMEGRANATE Imli.jpg",
-    "id": 41
-  },
-  {
     "name": "Usailah Cup Imli",
     "packing": "30x12",
     "unitPrice": 60.0,
@@ -417,17 +407,17 @@
     "tradePrice": 600.0,
     "category": "Imli",
     "image": "",
-    "id": 42
+    "id": 41
   },
   {
-    "name": "Sting Bubble",
-    "packing": "12x120",
-    "unitPrice": 5.0,
-    "retailPrice": 600.0,
-    "tradePrice": 500.0,
-    "category": "Bubble",
-    "image": "sting Bubble.jpg",
-    "id": 43
+    "name": "POMEGRANATE Imli",
+    "packing": "30x12",
+    "unitPrice": 60.0,
+    "retailPrice": 720.0,
+    "tradePrice": 600.0,
+    "category": "Imli",
+    "image": "POMEGRANATE Imli.jpg",
+    "id": 42
   },
   {
     "name": "Zombiez Bubble",
@@ -437,6 +427,16 @@
     "tradePrice": 500.0,
     "category": "Bubble",
     "image": "Zombiez Bubble.jpg",
+    "id": 43
+  },
+  {
+    "name": "Sting Bubble",
+    "packing": "12x120",
+    "unitPrice": 5.0,
+    "retailPrice": 600.0,
+    "tradePrice": 500.0,
+    "category": "Bubble",
+    "image": "sting Bubble.jpg",
     "id": 44
   },
   {
@@ -480,16 +480,6 @@
     "id": 48
   },
   {
-    "name": "Yumz",
-    "packing": "24x24",
-    "unitPrice": 10.0,
-    "retailPrice": 240.0,
-    "tradePrice": 200.0,
-    "category": "Others",
-    "image": "yumz fruity.jpg",
-    "id": 49
-  },
-  {
     "name": "Nimko Halla Gula",
     "packing": "12x6",
     "unitPrice": 10.0,
@@ -497,6 +487,16 @@
     "tradePrice": 210.0,
     "category": "Others",
     "image": "",
+    "id": 49
+  },
+  {
+    "name": "Yumz",
+    "packing": "24x24",
+    "unitPrice": 10.0,
+    "retailPrice": 240.0,
+    "tradePrice": 200.0,
+    "category": "Others",
+    "image": "yumz fruity.jpg",
     "id": 50
   },
   {
