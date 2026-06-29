@@ -936,7 +936,7 @@ header {
 .cat-others { background: #E2E8F0; color: #475569; }
 
 .product-image-container {
-  height: 220px;
+  height: 260px;
   background: #FFFFFF;
   display: flex;
   align-items: center;
@@ -996,7 +996,7 @@ header {
 
 .pricing-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
   background: var(--bg-warm);
   padding: 0.7rem;
@@ -1924,7 +1924,7 @@ footer {
   }
 
   .product-image-container {
-    height: 180px;
+    height: 220px;
   }
 
   .drawer-inner {

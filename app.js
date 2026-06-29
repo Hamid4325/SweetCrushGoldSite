@@ -236,6 +236,10 @@ function renderProducts(products) {
           </div>
 
           <div class="pricing-container">
+            <div class="price-item unit-price">
+              <span class="price-label">Unit Price</span>
+              <span class="price-val">Rs. ${product.unitPrice}</span>
+            </div>
             <div class="price-item trade-price">
               <span class="price-label">Trade Price</span>
               <span class="price-val">Rs. ${product.tradePrice}</span>
