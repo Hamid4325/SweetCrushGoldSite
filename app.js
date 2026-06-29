@@ -137,25 +137,32 @@ function fetchProducts() {
   const grid = document.getElementById("productsGrid");
   if (!grid) return;
 
-  const embeddedProducts = Array.isArray(window.SWEET_CRUSH_PRODUCTS) ? window.SWEET_CRUSH_PRODUCTS : [];
-
-  // Render immediately from embedded data if available (no waiting for fetch)
-  if (embeddedProducts.length > 0) {
-    productsData = embeddedProducts;
-    renderProducts(productsData);
+  // If inline script already rendered products, use its data
+  if (window.SWEET_CRUSH_PRODUCTS_RENDERED && window.__inlineProducts) {
+    productsData = window.__inlineProducts;
+    // Re-bind events for the already-rendered cards
+    reapplyCurrentFilter();
     setupFilters();
   } else {
-    // No embedded data — show skeleton while fetching
-    grid.innerHTML = Array(6).fill(0).map(() => `
-      <div class="product-card" style="opacity: 0.6; pointer-events: none;">
-        <div class="product-image-container" style="background: #F3F4F6;"></div>
-        <div class="product-details">
-          <div style="height: 24px; background: #E5E7EB; margin-bottom: 12px; border-radius: 4px;"></div>
-          <div style="height: 16px; background: #E5E7EB; width: 60%; margin-bottom: 20px; border-radius: 4px;"></div>
-          <div style="height: 48px; background: #E5E7EB; border-radius: 4px;"></div>
+    // Fallback: render from embedded data
+    const embeddedProducts = Array.isArray(window.SWEET_CRUSH_PRODUCTS) ? window.SWEET_CRUSH_PRODUCTS : [];
+    if (embeddedProducts.length > 0) {
+      productsData = embeddedProducts;
+      renderProducts(productsData);
+      setupFilters();
+    } else {
+      // No data — show skeleton while fetching
+      grid.innerHTML = Array(6).fill(0).map(() => `
+        <div class="product-card" style="opacity: 0.6; pointer-events: none;">
+          <div class="product-image-container" style="background: #F3F4F6;"></div>
+          <div class="product-details">
+            <div style="height: 24px; background: #E5E7EB; margin-bottom: 12px; border-radius: 4px;"></div>
+            <div style="height: 16px; background: #E5E7EB; width: 60%; margin-bottom: 20px; border-radius: 4px;"></div>
+            <div style="height: 48px; background: #E5E7EB; border-radius: 4px;"></div>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `).join('');
+    }
   }
 
   // Background fetch for latest data (skip on file:// protocol)

@@ -7,6 +7,7 @@
   <title>Sweet Crush Gold | Premium Confectionery Dealer — Lahore, Pakistan</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" href="style.css">
+  <script src="products-data.js"></script>
 </head>
 <body>
 
@@ -272,9 +273,54 @@
       </div>
     </div>
 
-    <div class="products-grid" id="productsGrid">
-      <!-- Generated dynamically in JS -->
-    </div>
+    <div class="products-grid" id="productsGrid"></div>
+    <script>
+    (function() {
+      var grid = document.getElementById('productsGrid');
+      if (!grid) return;
+      var products = window.SWEET_CRUSH_PRODUCTS;
+      if (!products || !products.length) return;
+      window.SWEET_CRUSH_PRODUCTS_RENDERED = true;
+      var visible = products.filter(function(p) { return p.image; });
+      if (!visible.length) return;
+      function catClass(cat) {
+        switch (cat) {
+          case 'Candy': return 'cat-candy';
+          case 'Lollipop': return 'cat-lollipop';
+          case 'Toffee': return 'cat-toffee';
+          case 'Jelly': return 'cat-jelly';
+          case 'Bunties': return 'cat-bunties';
+          case 'Liquid Chocolate': return 'cat-liquid-chocolate';
+          case 'Chocolate Cone': return 'cat-chocolate-cone';
+          case 'Hard Chocolate': return 'cat-hard-chocolate';
+          case 'Imli': return 'cat-imli';
+          case 'Bubble': return 'cat-bubble';
+          default: return 'cat-others';
+        }
+      }
+      grid.innerHTML = visible.map(function(product) {
+        var checked = '';
+        var cat = catClass(product.category);
+        var img = 'assets/products/' + encodeURIComponent(product.image);
+        var alt = product.name.replace(/"/g, '&quot;');
+        return '<div class="product-card" data-id="' + product.id + '">' +
+          '<div class="card-select-overlay"><label class="custom-checkbox">' +
+          '<input type="checkbox" class="product-checkbox" data-id="' + product.id + '"' + checked + '>' +
+          '<span class="checkmark"></span></label></div>' +
+          '<div class="card-badge-overlay"><span class="category-badge ' + cat + '">' + product.category + '</span></div>' +
+          '<div class="product-image-container"><img src="' + img + '" alt="' + alt + '" onerror="this.src=\'https://placehold.co/300x200?text=' + encodeURIComponent(product.name) + '\';"></div>' +
+          '<div class="product-details"><h3 class="product-name">' + product.name + '</h3>' +
+          '<div class="product-packing"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg><span>Packing: ' + product.packing + '</span></div>' +
+          '<div class="pricing-container"><div class="price-item unit-price"><span class="price-label">Unit Price</span><span class="price-val">Rs. ' + product.unitPrice + '</span></div>' +
+          '<div class="price-item trade-price"><span class="price-label">Trade Price</span><span class="price-val">Rs. ' + product.tradePrice + '</span></div>' +
+          '<div class="price-item retail-price"><span class="price-label">Retail Price</span><span class="price-val">Rs. ' + product.retailPrice + '</span></div></div>' +
+          '<div class="card-actions"><button class="btn-share share-single-whatsapp" data-id="' + product.id + '">' +
+          '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.233-1.371a9.994 9.994 0 0 0 4.779 1.203h.005c5.505 0 9.988-4.479 9.989-9.985a9.98 9.98 0 0 0-9.994-9.847zm4.992 14.129c-.274.767-1.344 1.396-1.859 1.488-.475.086-.948.337-3.046-.488-2.687-1.054-4.407-3.791-4.542-3.97-.133-.18-1.09-1.448-1.09-2.763 0-1.314.686-1.96.932-2.227.246-.267.535-.333.713-.333.178 0 .356.006.512.013.16.007.373-.06.584.453.214.52.733 1.786.797 1.92.062.133.104.288.016.467-.088.177-.133.289-.266.444-.133.156-.279.346-.399.466-.134.133-.274.28-.119.546.156.266.691 1.139 1.483 1.848.986.883 1.815 1.156 2.072 1.285.257.13.408.11.56-.062.152-.172.651-.756.825-1.012.174-.257.348-.21.587-.123.24.086 1.516.715 1.776.845.26.13.433.195.498.307.065.11.065.642-.209 1.411z"></path></svg>Share Product</button></div></div></div>';
+      }).join('');
+      // Set productsData for filters/quotes in app.js
+      window.__inlineProducts = visible;
+    })();
+    </script>
   </section>
 
   <!-- DOWNLOADS -->
@@ -324,10 +370,10 @@
           <div class="testimonial-content">
             <p class="testimonial-quote">"Sweet Crush Gold has been our go-to confectionery brand for over two years. The consistent quality and reliable delivery keep our shelves stocked and our customers happy."</p>
             <div class="testimonial-author">
-              <div class="testimonial-avatar">MK</div>
+              <div class="testimonial-avatar">RT</div>
               <div class="testimonial-info">
-                <div class="testimonial-name">Muhammad Kamran</div>
-                <div class="testimonial-role">Retailer, Lahore</div>
+                <div class="testimonial-name">Rizwan Trader</div>
+                <div class="testimonial-role">Distributor, Township Lahore</div>
               </div>
             </div>
           </div>
@@ -337,10 +383,10 @@
           <div class="testimonial-content">
             <p class="testimonial-quote">"The trade pricing and packing options are excellent for distributors. Their chocolate range, especially Silk + Bubbly and Spoon Chocolate, sells really well in our market."</p>
             <div class="testimonial-author">
-              <div class="testimonial-avatar">AH</div>
+              <div class="testimonial-avatar">ZT</div>
               <div class="testimonial-info">
-                <div class="testimonial-name">Ahmed Hassan</div>
-                <div class="testimonial-role">Distributor, Karachi</div>
+                <div class="testimonial-name">Zeeshan Trader</div>
+                <div class="testimonial-role">Distributor, Sadar Cantt Lahore</div>
               </div>
             </div>
           </div>
@@ -350,10 +396,10 @@
           <div class="testimonial-content">
             <p class="testimonial-quote">"What sets Sweet Crush Gold apart is their commitment to quality. From imli products to candies, every item is consistently fresh. Our customers trust the brand and so do we."</p>
             <div class="testimonial-author">
-              <div class="testimonial-avatar">RA</div>
+              <div class="testimonial-avatar">786</div>
               <div class="testimonial-info">
-                <div class="testimonial-name">Rana Ashraf</div>
-                <div class="testimonial-role">Wholesaler, Faisalabad</div>
+                <div class="testimonial-name">786 Trader</div>
+                <div class="testimonial-role">Distributor, Shah Kot Faisalabad</div>
               </div>
             </div>
           </div>
@@ -486,7 +532,6 @@
     </div>
   </div>
 
-  <script src="products-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
