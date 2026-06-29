@@ -923,22 +923,25 @@ header {
   letter-spacing: 0.4px;
 }
 
-.cat-chocolate { background: #FDE047; color: #713F12; }
-.cat-candies-toffees { background: #FDA4AF; color: #9F1239; }
-.cat-jelly { background: #86EFAC; color: #166534; }
-.cat-imli-sour { background: #FED7AA; color: #9A3412; }
+.cat-candy { background: #FDA4AF; color: #9F1239; }
 .cat-lollipop { background: #C084FC; color: #581C87; }
-.cat-nimko { background: #FDBA74; color: #7C2D12; }
-.cat-beans-gums { background: #93C5FD; color: #1E40AF; }
+.cat-toffee { background: #FDE68A; color: #92400E; }
+.cat-jelly { background: #86EFAC; color: #166534; }
+.cat-bunties { background: #93C5FD; color: #1E40AF; }
+.cat-liquid-chocolate { background: #D4D4D8; color: #3F3F46; }
+.cat-chocolate-cone { background: #FDBA74; color: #7C2D12; }
+.cat-hard-chocolate { background: #A78BFA; color: #3B0764; }
+.cat-imli { background: #FED7AA; color: #9A3412; }
+.cat-bubble { background: #67E8F9; color: #155E75; }
 .cat-others { background: #E2E8F0; color: #475569; }
 
 .product-image-container {
-  height: 280px;
+  height: 220px;
   background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 1rem;
   border-bottom: 1px solid var(--border-light);
   overflow: hidden;
   position: relative;
@@ -947,7 +950,7 @@ header {
 .product-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.4s ease;
 }
 
@@ -1916,8 +1919,12 @@ footer {
   }
 
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .product-image-container {
+    height: 180px;
   }
 
   .drawer-inner {

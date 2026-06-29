@@ -283,13 +283,17 @@ function renderProducts(products) {
 
 function getCategoryClass(cat) {
   switch (cat) {
-    case "Chocolate": return "cat-chocolate";
-    case "Candies & Toffees": return "cat-candies-toffees";
-    case "Jelly": return "cat-jelly";
-    case "Imli & Sour": return "cat-imli-sour";
+    case "Candy": return "cat-candy";
     case "Lollipop": return "cat-lollipop";
-    case "Nimko": return "cat-nimko";
-    case "Beans & Gums": return "cat-beans-gums";
+    case "Toffee": return "cat-toffee";
+    case "Jelly": return "cat-jelly";
+    case "Bunties": return "cat-bunties";
+    case "Liquid Chocolate": return "cat-liquid-chocolate";
+    case "Chocolate Cone": return "cat-chocolate-cone";
+    case "Hard Chocolate": return "cat-hard-chocolate";
+    case "Imli": return "cat-imli";
+    case "Bubble": return "cat-bubble";
+    case "Others": return "cat-others";
     default: return "cat-others";
   }
 }
