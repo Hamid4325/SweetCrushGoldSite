@@ -612,7 +612,7 @@ function initStatsCounter() {
 // ==========================================
 function initScrollReveal() {
   const revealElements = document.querySelectorAll(
-    ".about-grid, .features-grid, .catalogue-container, .banner-content, .search-filter-container, .products-grid, .download-cards-container, .testimonials-container, .cta-content, .stats-grid"
+    ".about-grid, .features-grid, .catalogue-container, .banner-content, .search-filter-container, .download-cards-container, .testimonials-container, .cta-content, .stats-grid"
   );
 
   if (revealElements.length === 0) return;
