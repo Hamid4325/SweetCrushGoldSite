@@ -303,8 +303,8 @@ window.SWEET_CRUSH_PRODUCTS = [
     "name": "Choco-Crunch",
     "packing": "24x18",
     "unitPrice": 30.0,
-    "retailPrice": 450.0,
-    "tradePrice": 540.0,
+    "retailPrice": 540.0,
+    "tradePrice": 450.0,
     "category": "Chocolate Cone",
     "image": "Choco Crunch.jpg",
     "id": 31
