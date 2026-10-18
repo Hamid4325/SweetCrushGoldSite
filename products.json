@@ -302,9 +302,9 @@
   {
     "name": "Choco-Crunch",
     "packing": "24x18",
-    "unitPrice": 20.0,
-    "retailPrice": 360.0,
-    "tradePrice": 300.0,
+    "unitPrice": 30.0,
+    "retailPrice": 450.0,
+    "tradePrice": 540.0,
     "category": "Chocolate Cone",
     "image": "Choco Crunch.jpg",
     "id": 31
